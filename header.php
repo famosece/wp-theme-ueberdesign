@@ -47,16 +47,19 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<header id="page-header">
+    <h1 id="site-title">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ueberdesign-logo-default.png" title="<?php bloginfo( 'name' ); ?>" />
+        </a>
+    </h1>
+
+    <div class="doubleline"></div>
+</header>
+
 <div id="page">
     <div id="page-inner">
-
-        <h1 id="site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/ueberdesign-logo-default.png" title="<?php bloginfo( 'name' ); ?>" />
-            </a>
-        </h1>
-
-        <div class="doubleline"></div>
 
 	    <nav>
 		    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

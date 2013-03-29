@@ -26,7 +26,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* END RESET */
 
 
-
+z-
 
 /* Basics, Fonts, Colors */
 
@@ -36,19 +36,43 @@ a { color: #000; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .doubleline { border-top: 1px solid black; height: 2px; border-bottom: 1px solid black; }
 
-/* Framework */
-
-#page { max-width: 1075px; margin: auto; overflow: hidden;}
-#page-inner { margin: 0 2.3255814%; }
 
 /* Header */
-#site-title { margin: 25px 0 10px 0; text-align: center; }
-nav { padding: 10px; overflow: hidden; }
+#page-header { position: fixed; max-width: 1075px; top: 0; left: 0; right: 0; margin: auto; background: white; z-index: 3; }
+#page-header #site-title { margin: 25px 0 10px 0; text-align: center; }
+#page-header .doubleline { margin: 0 2.3255814% 2px 2.3255814%; }
+
+
+/* Framework */
+#page { max-width: 1075px; margin: 100px auto 0; overflow: hidden; }
+#page-inner { margin: 0 2.3255814%; }
+#main { margin-bottom: 25px; }
+footer { margin-top: 25px; }
+
+
+/* Navigation */
+nav { padding: 25px 0; overflow: hidden; }
 nav ul { text-align: center; }
 nav ul li { display: inline; }
 nav ul li:after { content: '///'; margin: 0 6px 0 8px; }
 nav ul li:last-child:after { content: ''; margin: 0; }
 
 
+
+/* Home */
+.content-home { overflow: hidden; }
+.content-home a { float: left; position: relative; width: 48.7804878%; height: 333px; margin-right: 2.4390244%; margin-bottom: 25px; }
+.content-home a:nth-child(2n) { margin-right: 0; }
+.content-home a img { position: absolute; top: 0; left: 0; z-index: 1; }
+.content-home a img { position: absolute; top: 0; left: 0; z-index: 1; }
+.content-home a .imgcaption { position: absolute; top: 0; left: 0; z-index: 2; opacity: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); color: white; text-align: center; font-size: 18px; line-height: 1.5em; -moz-transition: opacity 0.5s; }
+.content-home a .imgcaption h2 { font-weight: bold; margin-top: 110px; }
+.content-home a:hover .imgcaption { opacity: 1; }
+
+
+
+
 /* Content */
-h1.entry-title { font-weight: bold; font-size: 24px; line-height: 1.3em;  }
+.content-single img.alignnone { margin-bottom: 25px; }
+.content-single img.alignleft { margin-right: 25px; margin-bottom: 25px; }
+.content-single strong { font-weight: bold; }
