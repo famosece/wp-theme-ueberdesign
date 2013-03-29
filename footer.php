@@ -1,7 +1,8 @@
-	</div><!-- #main -->
+	    </div><!-- #main -->
 
-	<footer>
-	</footer>
+	    <footer>
+	    </footer>
+    </div><!-- #page-inner -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

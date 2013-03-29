@@ -33,12 +33,14 @@
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
 		echo ' | ' . sprintf( __( 'Page %s', 'myThemeName' ), max( $paged, $page ) );
-
 	?></title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
 <?php
 	wp_head();
 ?>
@@ -46,20 +48,19 @@
 
 <body <?php body_class(); ?>>
 <div id="page">
-    <header id="branding">
-        <hgroup>
-            <h1 id="site-title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
-                </a>
-            </h1>
-			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+    <div id="page-inner">
 
-			<nav>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->
-	</header><!-- #branding -->
+        <h1 id="site-title">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ueberdesign-logo-default.png" title="<?php bloginfo( 'name' ); ?>" />
+            </a>
+        </h1>
+
+        <div class="doubleline"></div>
+
+	    <nav>
+		    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	    </nav><!-- #access -->
 
 
-	<div id="main">
+	    <div id="main">

@@ -27,22 +27,28 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 
+
 /* Basics, Fonts, Colors */
 
-body { font-size: 16px; line-height: 1.3em; font-family: Arial, sans; color: #444; }
-a { color: #00a; text-decoration: none; }
+html { font-size: 16px; }
+body { line-height: 1.3em; font-family: Dosis, Arial, sans; color: #444; }
+a { color: #000; text-decoration: none; }
 a:hover { text-decoration: underline; }
-
-
+.doubleline { border-top: 1px solid black; height: 2px; border-bottom: 1px solid black; }
 
 /* Framework */
 
-#page { width: 920px; padding: 20px; margin: 10px auto; background-color: #ddd; }
+#page { max-width: 1075px; margin: auto; overflow: hidden;}
+#page-inner { margin: 0 2.3255814%; }
 
-header#branding { background-color: white; padding: 10px; margin-bottom: 20px; }
-
-nav { background-color: #fea; padding: 10px; }
+/* Header */
+#site-title { margin: 25px 0 10px 0; text-align: center; }
+nav { padding: 10px; overflow: hidden; }
+nav ul { text-align: center; }
+nav ul li { display: inline; }
+nav ul li:after { content: '///'; margin: 0 6px 0 8px; }
+nav ul li:last-child:after { content: ''; margin: 0; }
 
 
 /* Content */
-h1.entry-title { font-weight: bold; font-size: 24px; line-height: 1.3em; }
+h1.entry-title { font-weight: bold; font-size: 24px; line-height: 1.3em;  }
