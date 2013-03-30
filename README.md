@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-This is a Wordpress theme in an open repository. Feel free to look around and use parts of this theme or all of it. But be aware, that this theme was created for our personal use and it is not intended to be work on every possible installation in the world.
+This is a Wordpress theme in an open repository. Feel free to look around and use parts of this theme or all of it. But be aware, that this theme was created for our personal use and it is not intended to work on every possible installation in the world.
 
 ## Installation
 
