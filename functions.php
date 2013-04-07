@@ -7,10 +7,8 @@ add_theme_support('post-thumbnails');
 
 
 require_once(TEMPLATEPATH . '/functions/admin.php');
-/*
 require_once(TEMPLATEPATH . '/functions/shortcodes.php');
-require_once(TEMPLATEPATH . '/functions/customtypes.php');
-*/
+
 
 
 
@@ -19,10 +17,16 @@ register_nav_menu('primary', 'Primary');
 
 
 
-/*
-register_sidebar(array(
-    'id' => 'sidebar_footer',
-    'name' => __('Footer', 'MYTHEME'),
-    'description' => __('Description Here', 'MYTHEME')
-));
-*/
+function ueberdesign_widgets_init() {
+
+    register_sidebar(array(
+        'name' => 'Footer Left',
+        'id' => 'sidebar_footer_left'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Footer Right',
+        'id' => 'sidebar_footer_right'
+    ));
+}
+add_action('widgets_init', 'ueberdesign_widgets_init');

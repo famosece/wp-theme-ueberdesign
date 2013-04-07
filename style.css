@@ -26,8 +26,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* END RESET */
 
 
-z-
-
 /* Basics, Fonts, Colors */
 
 html { font-size: 16px; }
@@ -39,15 +37,16 @@ a:hover { text-decoration: underline; }
 
 /* Header */
 #page-header { position: fixed; max-width: 1075px; top: 0; left: 0; right: 0; margin: auto; background: white; z-index: 3; }
+body.admin-bar #page-header { top: 28px; }
 #page-header #site-title { margin: 25px 0 10px 0; text-align: center; }
 #page-header .doubleline { margin: 0 2.3255814% 2px 2.3255814%; }
 
 
 /* Framework */
-#page { max-width: 1075px; margin: 100px auto 0; overflow: hidden; }
+#page { max-width: 1075px; margin: 125px auto 0; overflow: hidden; }
 #page-inner { margin: 0 2.3255814%; }
 #main { margin-bottom: 25px; }
-footer { margin-top: 25px; }
+
 
 
 /* Navigation */
@@ -76,3 +75,8 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 .content-single img.alignnone { margin-bottom: 25px; }
 .content-single img.alignleft { margin-right: 25px; margin-bottom: 25px; }
 .content-single strong { font-weight: bold; }
+
+/* Footer */
+footer { margin: 10px 30px 25px 30px; overflow: hidden; }
+ul.footer-left { float: left; width: 49%; }
+ul.footer-right { float: right; width: 49%; text-align: right; }
