@@ -38,5 +38,5 @@ If you want to add a «Home» link (and name it i.e. «Selected Work»), look ou
 * Type `[HugeMarginBoxEnd]` to close the box.
 * Type `[ShareBox]` between Start and End of the HugeMarginBox to display share links at the right side of the Huge Margin Bix
 
-## When to use <p> (Paragraph) and when <h3> (Heading 3)
+## When to use &lt;p&gt; (Paragraph) and when &lt;h3&gt; (Heading 3)
 * In the Hugemargin-Box, the Paragraph makes a margin at the bottom, the h3 not
