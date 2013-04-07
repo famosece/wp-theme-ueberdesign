@@ -1,12 +1,17 @@
 <?php
-require_once(TEMPLATEPATH . '/functions/shortcodes.php');
-require_once(TEMPLATEPATH . '/functions/customtypes.php');
-
 
 
 add_theme_support('post-thumbnails');
 //add_image_size('gallery-main', 351, 351, true);
 //add_image_size('gallery-preview', 117, 117, true);
+
+
+require_once(TEMPLATEPATH . '/functions/admin.php');
+/*
+require_once(TEMPLATEPATH . '/functions/shortcodes.php');
+require_once(TEMPLATEPATH . '/functions/customtypes.php');
+*/
+
 
 
 

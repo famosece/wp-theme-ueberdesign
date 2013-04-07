@@ -51,7 +51,18 @@
 <header id="page-header">
     <h1 id="site-title">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/ueberdesign-logo-default.png" title="<?php bloginfo( 'name' ); ?>" />
+
+            <?php
+                $themeOptions = get_option('ueberdesign');
+                if (isset($themeOptions['logo']) && strlen($themeOptions['logo']) > 0) {
+                    $logoImg = $themeOptions['logo'];
+
+                }
+                else {
+                    $logoImg = get_template_directory_uri() . '/img/ueberdesign-logo-default.png';
+                }
+            ?>
+            <img src="<?php echo $logoImg; ?>" title="<?php bloginfo( 'name' ); ?>" />
         </a>
     </h1>
 
