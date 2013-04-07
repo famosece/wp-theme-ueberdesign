@@ -30,3 +30,13 @@ Go to `Settings` > `Media` and choose the following image sizes:
 
 **Hint**:
 If you want to add a «Home» link (and name it i.e. «Selected Work»), look out for the box `Pages`, click on the tab `View all` and choose `Home:Home`.
+
+## About shortcodes in the content area
+
+### Huge Margin Box
+* Type `[HugeMarginBoxStart]` to open such a box. If you forget to embrace your content in a Huge Margin Box, the content is 1025px wide.
+* Type `[HugeMarginBoxEnd]` to close the box.
+* Type `[ShareBox]` between Start and End of the HugeMarginBox to display share links at the right side of the Huge Margin Bix
+
+## When to use <p> (Paragraph) and when <h3> (Heading 3)
+* In the Hugemargin-Box, the Paragraph makes a margin at the bottom, the h3 not

@@ -70,11 +70,16 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 
 
 
-
 /* Content */
 .content-single img.alignnone { margin-bottom: 25px; }
 .content-single img.alignleft { margin-right: 25px; margin-bottom: 25px; }
 .content-single strong { font-weight: bold; }
+
+.hugemarginbox { margin: 0 264px; position: relative; }
+.hugemarginbox p { margin-bottom: 1em; }
+.hugemarginbox .sharebox { position: absolute; top: 0; right: -150px; width: 100px; }
+
+
 
 /* Footer */
 footer { margin: 10px 30px 25px 30px; overflow: hidden; }
