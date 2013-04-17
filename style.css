@@ -39,6 +39,7 @@ a:hover { text-decoration: underline; }
 #page-header { position: fixed; max-width: 1075px; top: 0; left: 0; right: 0; margin: auto; background: white; z-index: 3; }
 body.admin-bar #page-header { top: 28px; }
 #page-header #site-title { margin: 25px 0 10px 0; text-align: center; }
+#page-header #site-title img { max-width: 100%; }
 #page-header .doubleline { margin: 0 2.3255814% 2px 2.3255814%; }
 
 
@@ -60,22 +61,24 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 
 /* Home */
 .content-home { overflow: hidden; }
-.content-home a { float: left; position: relative; width: 48.7804878%; height: 333px; margin-right: 2.4390244%; margin-bottom: 25px; }
+.content-home a { float: left; position: relative; width: 48.7804878%; margin-right: 2.4390244%; margin-bottom: 2.4390244%; }
 .content-home a:nth-child(2n) { margin-right: 0; }
-.content-home a img { position: absolute; top: 0; left: 0; z-index: 1; }
-.content-home a img { position: absolute; top: 0; left: 0; z-index: 1; }
+.content-home a img { width: 100%; display: block; }
 .content-home a .imgcaption { position: absolute; top: 0; left: 0; z-index: 2; opacity: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); color: white; text-align: center; font-size: 18px; line-height: 1.5em; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
-.content-home a .imgcaption h2 { font-weight: bold; margin-top: 110px; }
+.content-home a .imgcaption h2 { font-weight: bold; margin-top: 25%; }
 .content-home a:hover .imgcaption { opacity: 1; }
 
 
 
 /* Content */
-.content-single img.alignnone { margin-bottom: 25px; }
-.content-single img.alignleft { margin-right: 25px; margin-bottom: 25px; }
+.content-single img { max-width: 100%; height: auto; }
+.content-single img.size-medium { width: 48.7804878%; }
+
+.content-single img.alignnone { margin-bottom: 2.4390244%; }
+.content-single img.alignleft { float: left; margin-right: 2.4390244%; margin-bottom: 2.4390244%;; }
 .content-single strong { font-weight: bold; }
 
-.hugemarginbox { margin: 0 264px; position: relative; }
+.hugemarginbox { margin: 0 25.7560976%; position: relative; }
 .hugemarginbox p { margin-bottom: 1em; }
 .hugemarginbox .sharebox { position: absolute; top: 0; right: -150px; width: 100px; }
 
@@ -85,3 +88,37 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 footer { margin: 10px 30px 25px 30px; overflow: hidden; }
 ul.footer-left { float: left; width: 49%; }
 ul.footer-right { float: right; width: 49%; text-align: right; }
+
+
+
+/* ======================
+* Small Screen Exceptions
+* ======================= */
+
+
+
+
+@media screen and (max-width: 560px) {
+    .hugemarginbox { margin: 0; }
+    .hugemarginbox .sharebox { position: static; margin-bottom: 1em;  }
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+
+    /* Home */
+    .content-home a { width: 100%; margin-right: 0; }
+
+    /* Footer */
+    footer { margin: 10px 0 25px 0; }
+    ul.footer-left { width: 100%; float: none; }
+    ul.footer-right { width: 100%; float: none; text-align: left; }
+
+    /* Content */
+    .content-single img.alignleft { width: 100%; float: none; }
+    .content-single img.size-medium { width: 100%; }
+
+
+}
