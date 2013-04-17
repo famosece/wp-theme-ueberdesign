@@ -82,6 +82,7 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 .hugemarginbox p { margin-bottom: 1em; }
 .hugemarginbox .sharebox { position: absolute; top: 0; right: -150px; width: 100px; }
 
+.standard-page p { margin-bottom: 1em; }
 
 
 /* Footer */

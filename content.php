@@ -13,7 +13,7 @@
         </div><!-- .entry-meta -->
     </header><!-- .entry-header -->
 
-    <div class="entry-content">
+    <div class="entry-content standard-page">
         <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'myThemeName' ) ); ?>
         <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'myThemeName' ) . '</span>', 'after' => '</div>' ) ); ?>
     </div><!-- .entry-content -->
