@@ -1,14 +1,44 @@
 <?php
 
+/**
+* Small Margin Box (Start)
+*/
+function shortcodeSmallMarginBoxStart() {
+    return '<div class="smallmarginbox">' . $content;
+}
+add_shortcode('SmallMarginBoxStart', 'shortcodeSmallMarginBoxStart');
+
+
+/**
+* Small Margin Box (End)
+*/
+function shortcodeSmallMarginBoxEnd() {
+    return '</div>';
+}
+add_shortcode('SmallMarginBoxEnd', 'shortcodeSmallMarginBoxEnd');
+
+
+/**
+* Huge Margin Box (Start)
+*/
 function shortcodeHugeMarginBoxStart() {
     return '<div class="hugemarginbox">' . $content;
 }
 add_shortcode('HugeMarginBoxStart', 'shortcodeHugeMarginBoxStart');
 
+
+/**
+* Huge Margin Box (End)
+*/
 function shortcodeHugeMarginBoxEnd() {
     return '</div>';
 }
 add_shortcode('HugeMarginBoxEnd', 'shortcodeHugeMarginBoxEnd');
+
+
+/**
+* ShareBox
+*/
 
 function shortcodeShareBox() {
     $url = get_permalink();

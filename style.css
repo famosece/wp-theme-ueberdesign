@@ -3,7 +3,7 @@ Theme Name: Ueberdesign
 Author:
 Author URI:
 Description: Theme for Gaby
-Version: 0.3
+Version: 0.4
 */
 
 
@@ -82,6 +82,8 @@ nav ul li:last-child:after { content: ''; margin: 0; }
 .hugemarginbox p { margin-bottom: 1em; }
 .hugemarginbox .sharebox { position: absolute; top: 0; right: -150px; width: 100px; }
 
+.smallmarginbox { margin: 0 13.4146341%; }
+
 .standard-page p { margin-bottom: 1em; }
 
 
@@ -121,5 +123,6 @@ ul.footer-right { float: right; width: 49%; text-align: right; }
     .content-single img.alignleft { width: 100%; float: none; }
     .content-single img.size-medium { width: 100%; }
 
-
+    /* SmallMarginBox sould not have a margin any longer */
+    .smallmarginbox { margin: 0; }
 }
